@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>PERCENTAGE CALCULATOR</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	
+	
+			<h1>PERCENTAGE CALCULATOR</h1>
+		<div class="container">
+
+	
+		
+		<form onsubmit="calculate(); return false;">
+		<p><label for="num1">Enter marks of subject 1: </label>
+        <input type="number"  max="100"  id="num1" placeholder="Enter marks here" required><br></p>
+        
+        <p>
+        <label for="num2">Enter marks of subject 2: </label>
+        <input type="number"  max="100"  id="num2" placeholder="Enter marks here" required ><br></p>
+         <p>
+        <label for="num1">Enter marks of subject 3: </label>
+        <input type="number" max="100"   id="num3" placeholder="Enter marks here" required ><br></p>
+         <p>
+        <label for="num1">Enter marks of subject 4: </label>
+        <input type="number" max="100"   id="num4" placeholder="Enter marks here" required><br></p>
+        <p>
+        <label for="num1">Enter marks of subject 5: </label>
+        <input type="number" max="100"   id="num5" placeholder="Enter marks here" required><br></p>
+        
+      <p>
+        <label for="num1">Enter marks of subject 6: </label>
+        <input type="number" max="100"   id="num6" placeholder="Enter marks here" required><br></p>
+        
+        <p>
+        <label for="num1">Enter marks of subject 7: </label>
+        <input type="number" max="100"   id="num7" placeholder="Enter marks here" required><br></p>
+        
+    <p>
+        <label for="num1">Enter marks of subject 8: </label>
+        <input type="number"  max="100"  id="num8" placeholder="Enter marks here" required><br></p>
+        
+        <p>
+        <label for="num1">Enter marks of subject 9: </label>
+         <input type="number"  max="100"   id="num9" placeholder="Enter marks here" required><br></p>
+        <p>
+        <label for="num1">Enter marks ofsubject 10: </label>
+        <input type="number" max="100"  id="num10" placeholder="Enter marks here" required><br></p>
+        <br>
+        
+        <button type="submit" class="btn">Calculate Percentage</button>
+    
+    
+	
+</form>
+<h2 id="result"></h2>
+</div>
+<!-- </div> -->
+
+<script>
+	function calculate() {
+
+		let marks1=parseInt(document.querySelector("#num1").value);
+        let marks2=parseInt(document.querySelector("#num2").value);
+        let marks3=parseInt(document.querySelector("#num3").value);
+        let marks4=parseInt(document.querySelector("#num4").value);
+        let marks5=parseInt(document.querySelector("#num5").value);
+        let marks6=parseInt(document.querySelector("#num6").value);
+        let marks7=parseInt(document.querySelector("#num7").value);
+        let marks8=parseInt(document.querySelector("#num8").value);
+        let marks9=parseInt(document.querySelector("#num9").value);
+        let marks10=parseInt(document.querySelector("#num10").value);
+       
+        let ob_marks= +(marks1+marks2+marks3+marks4+marks5+marks6+marks7+marks8+marks9+marks10)
+        let result= +(marks1+marks2+marks3+marks4+marks5+marks6+marks7+marks8+marks9+marks10)*100/1000;
+     
+        
+        if ( result>=80 ) {
+        	document.querySelector("#result").innerHTML =" Total marks are 1000 <br> Your obtained marks are : "  + ob_marks  + "<br> Percentage is "  + result + "%  & You Secured A+ Grade";
+        }else if(result>=70){
+               document.querySelector("#result").innerHTML =" Total marks are 1000 <br>Your obtained marks are : "  + ob_marks  +"<br>  Percentage is "  + result + "%  & You Secured A Grade";
+        }else if(result>=60){
+        	document.querySelector("#result").innerHTML =" Total marks are 1000<br> Your obtained marks are : "  + ob_marks  + "<br>Percentage is "  + result + "%  & You Secured B Grade";
+        }else if(result>=50){
+        	document.querySelector("#result").innerHTML =" Total marks are 1000<br> Your obtained marks are : "  + ob_marks  + "<br> Percentage is "  + result + "%  & You secured C Grade";
+
+        }else{
+        	document.querySelector("#result").innerHTML =" Total marks are 1000<br> Your obtained marks are : "  + ob_marks  + " <br> Percentage is "  + result + "%  &  Unfortunately, You are fail";
+        }
+        
+	}
+
+
+</script>
+</body>
+</html>

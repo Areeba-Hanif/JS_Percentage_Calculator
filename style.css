@@ -1,0 +1,61 @@
+*{
+	margin: 0;
+	padding: 0;
+
+}
+body{
+    background-image: url(pic1.jpg); 
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+}
+
+h1{
+	color: white;
+	font-size: 40px;
+	text-align: center;
+	font-family: fantasy;
+	letter-spacing: 6px;
+
+}
+
+.container{
+	width: 500px;
+
+
+	
+}
+form{
+	padding: 5px;
+	color: white;
+	font-family: monospace;
+	font-weight: bold;
+	
+}
+p{
+	font-size: 17px;
+	margin: 15px;
+}
+input{
+	padding: 5px;
+}
+.btn{
+	transition: all 0.5s ease-in-out;
+	color: red;
+	font-size: 20px;
+	padding: 12px;
+	background-color: white;
+
+}
+.btn:hover{
+	transition: all 0.5s ease-in-out;
+	transform: translatex(20px);
+	color: white;
+	background-color: grey;
+}
+h2{
+	color: white;
+	font-family: cursive;
+
+}
